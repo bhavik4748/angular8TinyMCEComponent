@@ -5,5 +5,5 @@
 <input type="text" #ccomponent (keyup)="onChange(ccomponent.value)" />
 
 <p>Value of parent component is: {{ PData }}</p>
-<editor [(ngModel)]="PData"></editor>
+<editor [(ngModel)]="PData" [init]="{ menubar: false,  height: 100, branding: false}"></editor>
 <button type="button" (click)="onChange(PData)">Submit</button>
